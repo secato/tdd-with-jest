@@ -1,0 +1,22 @@
+{
+    "name": "jest-tdd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "pg": "^8.0.0",
+        "sequelize": "^5.21.6"
+    },
+    "devDependencies": {
+        "jest": "^25.2.7",
+        "nodemon": "^2.0.2",
+        "sequelize-cli": "^5.5.1"
+    }
+}
