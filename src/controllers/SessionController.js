@@ -13,5 +13,5 @@ exports.store = async (req, res) => {
         return res.status(401).json({ message: 'Wrong username or password' })
     }
 
-    return res.json({ user })
+    return res.json({ user, token: user.generateToken() })
 }
