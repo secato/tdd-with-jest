@@ -1,10 +1,11 @@
+const faker = require('faker')
 const { User } = require('../../src/models')
 
 exports.User = function (merge) {
     const defaultProperties = {
-        name: 'Felipe',
-        email: 'felipe.secato@gmail.com',
-        password: '123123',
+        name: faker.name.findName(),
+        email: faker.internet.email(),
+        password: faker.internet.password(),
     }
 
     let merged = { ...defaultProperties, ...merge }
